@@ -20,16 +20,18 @@ const CustomTable = ({ data, config }) => {
     return (
         <table>
             <thead>
-                {config.map((column) => (
-                    <th>{column.heading}</th>
-                ))}
+                <tr>
+                    {config.map((column, idx) => (
+                        <th key={idx}>{column.heading}</th>
+                    ))}
+                </tr>
             </thead>
             <tbody>
                 {data.length > 0
-                    ? data.map((row) => (
-                        <tr>
-                            {config.map(column => (
-                                <td>{getColumnData(row, column)}</td>
+                    ? data.map((row, rowIdx) => (
+                        <tr key={rowIdx}>
+                            {config.map((column, colIdx) => (
+                                <td key={colIdx}>{getColumnData(row, column)}</td>
                             ))}
                         </tr>
                     ))
