@@ -4,4 +4,4 @@ Steps to Run:
 - Step3: Use yarn start (or npm start) to start the development server
 
 Public Url:
-https://pagination-ob3emjypn-shubamdadhwals-projects.vercel.app
+https://pagination-p0mqc9q09-shubamdadhwals-projects.vercel.app/
