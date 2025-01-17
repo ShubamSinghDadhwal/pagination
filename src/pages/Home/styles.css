@@ -1,0 +1,21 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+    gap: 20px;
+}
+
+.homeContainer .tableWrapper {
+    height: 420px;
+    overflow: scroll;
+}
+
+.homeContainer .tableWrapper table {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.homeContainer .paginationContainer {
+    flex: 1;
+}
