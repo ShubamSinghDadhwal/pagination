@@ -1,7 +1,7 @@
 import React from "react";
 import { NoData } from "../NoData";
-import "./styles.css";
 import { formatCurrency, formatPercentage } from "../../utils";
+import "./styles.css";
 
 const CustomTable = ({ data, config }) => {
     
